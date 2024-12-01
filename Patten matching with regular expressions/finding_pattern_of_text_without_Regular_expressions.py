@@ -25,3 +25,11 @@ def getUserInput():
 
 # Call the input function
 getUserInput()
+
+message = 'Call me at 415-515-1011 tommorow, 414-515-1011 is my office.'
+for i in range(len(message)):
+    chunk = message[i:i+12]
+    if isPhoneNumber(chunk):
+        print("Phone number found: "+ chunk)
+
+print("Done")
