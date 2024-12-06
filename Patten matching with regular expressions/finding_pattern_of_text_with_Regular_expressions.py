@@ -47,8 +47,24 @@ mo3 = batRegex.search('Batmobile lost a wheel')
 print(mo3.group())
 print(mo3.group(1))
 
+"""Optional matching with the Question Mark"""
+batRegex = re.compile(r'Bat(wo)?man')
+mo1 = batRegex.search('The Adventures of Batman')
+print(mo1.group())
 
+mo2 = batRegex.search('The Adventures of Batwoman')
+print(mo2.group())
 
+"""Matching zero or more with the star"""
+batRegex = re.compile(r'Bat(wo)*man')
+mo1 = batRegex.search('The Adventures of Batwoman')
+print(mo1.group())
+
+mo2 = batRegex.search('The Adventures of Batwoman')
+print(mo2.group())
+
+mo3 = batRegex.search('The Adventures of Batwowowoman')
+print(mo3.group())
 
 
 
