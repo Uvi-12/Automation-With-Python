@@ -65,10 +65,3 @@ print(mo2.group())
 
 mo3 = batRegex.search('The Adventures of Batwowowoman')
 print(mo3.group())
-
-
-
-
-
-
-
