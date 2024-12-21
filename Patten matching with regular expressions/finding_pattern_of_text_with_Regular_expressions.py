@@ -73,8 +73,3 @@ print(mo1.group())
 
 mo2 haRegex.search('Ha')
 print(mo2 == None)
-
-
-
-
-
